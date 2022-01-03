@@ -6,4 +6,10 @@ feh
 xorg
 xorg-server
 xorg-xinit
+xdg-utils
 kitty
+pulseaudio-alsa
+pulseaudio-bluetooth
+pulseaudio-equalizer
+pulseaudio-jack
+pavucontrol
