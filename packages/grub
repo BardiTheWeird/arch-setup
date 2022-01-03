@@ -1,3 +1,5 @@
 grub
 os-prober
 ntfs-3g
+dosfstools
+efibootmgr
