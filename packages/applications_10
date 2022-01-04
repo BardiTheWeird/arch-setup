@@ -6,3 +6,5 @@ htop
 playerctl
 zip
 unzip
+jq
+acpilight
