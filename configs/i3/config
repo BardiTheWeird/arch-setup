@@ -207,6 +207,14 @@ bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 # Set a wallpaper
 exec_always feh --bg-scale ~/Pictures/Wallpapers/ina_iya_wallpaper.png
 
+# Set firefox as a default browser
+exec xdg-settings set default-web-browser firefox.desktop
+
 # Change keymaps
+# set En as default
+exec setxkbmap us
+
+# F1-F3 En-Ua-Ru
 bindsym $mod+F1 exec setxkbmap us
 bindsym $mod+F2 exec setxkbmap ua
+bindsym $mod+F3 exec setxkbmap ru
