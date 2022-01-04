@@ -9,4 +9,5 @@ useradd -m bardi -G sudo
 echo "create a password for bardi:"
 passwd bardi
 
-echo "uncomment the '%sudo ALL=(ALL) ALL' line in /etc/sudoers"
+# make is possible to use sudo for users in sudo group
+sed -i 's/# %sudo/%sudo/g' /etc/sudoers

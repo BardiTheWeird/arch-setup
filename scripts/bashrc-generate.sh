@@ -1,5 +1,5 @@
-SWAY=0
-I3=1
+SWAY=1
+I3=0
 
 if [[ -f .bashrc ]]
 then
