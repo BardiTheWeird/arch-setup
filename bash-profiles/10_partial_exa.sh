@@ -1,5 +1,0 @@
-alias ls='exa -a       -F --color=always --group-directories-first'
-alias la='exa -a -a    -F --color=always --group-directories-first'
-alias ll='exa -a -l -h -F --color=always --group-directories-first --git'
-alias lt='exa    -T    -F --color=always --group-directories-first'
-alias ll-s='exa -a -l -h -F --color=always --group-directories-first --git -s modified -r'

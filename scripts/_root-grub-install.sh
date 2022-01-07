@@ -1,6 +1,7 @@
 pacman -S $(< packages/grub)
+os-prober
 
-echo "GRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
+sed -i 's/#\(GRUB_DISABLE_OS_PROBER=false\)/\1/g' /etc/default/grub
 
 EFI_PARTITION=$1
 if [[ ! $EFI_PARTITION ]]
@@ -10,7 +11,7 @@ then
 fi
 
 mkfs.fat -F32 $EFI_PARTITION && \
-mkdir /efi
+mkdir -p /efi
 mount $EFI_PARTITION /efi && \
 grub-install --target=x86_64-efi --efi-directory=/efi && \
 mkdir -p /boot/grub/ && \

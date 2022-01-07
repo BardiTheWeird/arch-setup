@@ -4,7 +4,7 @@ echo "adding sudo group..."
 groupadd sudo
 
 echo "adding a user bardi..."
-useradd -m bardi -G sudo
+useradd -m bardi -G sudo,audio,video,lp
 
 echo "create a password for bardi:"
 passwd bardi
